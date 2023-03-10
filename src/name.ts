@@ -1,3 +1,3 @@
 export function getName() {
-	return "John Doe";
+	return "Julien Pelletier";
 }
