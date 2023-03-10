@@ -1,9 +1,10 @@
 {
   "name": "test-git",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "author": "Julien Pelletier <julien.pelletier8@gmail.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "build": "tsc",
     "commit": "cz",
@@ -12,17 +13,20 @@
     "format": "prettier --write src/",
     "format:check": "prettier --check src/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "release-it"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "auto-changelog": "^2.4.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
     "prettier": "2.8.4",
+    "release-it": "^15.8.0",
     "typescript": "^4.9.5"
   },
   "lint-staged": {
