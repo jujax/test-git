@@ -29,7 +29,7 @@
     "src/*": [
       "yarn format",
       "yarn lint:fix",
-      "yarn build"
+      "bash -c 'yarn build'"
     ]
   },
   "config": {
